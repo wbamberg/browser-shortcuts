@@ -75,11 +75,12 @@ function keysToString(keyPress) {
 }
 
 function handleKeys(event) {
+  var output = document.getElementById("output");
+  output.textContent = "";
 
   for (var i = 0; i < keysToIntercept.length; i++) {
     keyPress = keysToIntercept[i];
     if (keyPressMatches(keyPress, event)) {
-      var output = document.getElementById("output");
       output.textContent = "intercepted " + keysToString(keyPress);
       event.preventDefault();
       event.stopPropagation();
