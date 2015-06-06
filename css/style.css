@@ -1,0 +1,9 @@
+#output {
+  margin: 2em;
+  border: 1px solid black;
+  height: 2em;
+  padding: 1em;
+}
+body {
+  font-family: monospace;
+}
